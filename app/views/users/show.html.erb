@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Password digest:</strong>
+  <%= @user.password_digest %>
+</p>
+
+<p>
+  <strong>Is tutor:</strong>
+  <%= @user.is_tutor %>
+</p>
+
+<p>
+  <strong>Approved:</strong>
+  <%= @user.approved %>
+</p>
+
+<p>
+  <strong>Approved at:</strong>
+  <%= @user.approved_at %>
+</p>
+
+<p>
+  <strong>Banned:</strong>
+  <%= @user.banned %>
+</p>
+
+<p>
+  <strong>Banned at:</strong>
+  <%= @user.banned_at %>
+</p>
+
+<p>
+  <strong>Is admin:</strong>
+  <%= @user.is_admin %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
