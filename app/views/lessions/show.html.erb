@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @lession.name %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @lession.user %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @lession.subject %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @lession.city %>
+</p>
+
+<%= link_to 'Edit', edit_lession_path(@lession) %> |
+<%= link_to 'Back', lessions_path %>
